@@ -5,12 +5,6 @@ function split(wholeArr){
 		return [firstHalf, secondHalf];	
 
 }
-// function merge() {
-// 	var result = []; 
-// 	var right = 0; 
-// 	var left = 0; 
-// 	while(left<le)
-// }
 
 function merge(arr1, arr2) {
 	if (arr1.length  === 0) {
