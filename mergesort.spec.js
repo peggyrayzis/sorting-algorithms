@@ -19,5 +19,9 @@ describe('mergeSort Function', function(){
  //implements the recursive mergeSort function
  it('merge an unsorted array', function(){
    // test the merging algorithm
+   expect(mergeSort([1,4,6,78,8,6])).toEqual([1,4,6,6,8,78])
+   expect(mergeSort([67,2,32])).toEqual([2,32,67])
  });
 });
+
+

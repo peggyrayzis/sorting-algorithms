@@ -5,9 +5,14 @@ function split(wholeArr){
 		return [firstHalf, secondHalf];	
 
 }
+// function merge() {
+// 	var result = []; 
+// 	var right = 0; 
+// 	var left = 0; 
+// 	while(left<le)
+// }
 
 function merge(arr1, arr2) {
-	console.log("arr1", arr1, "arr2", arr2)
 	if (arr1.length  === 0) {
 		return arr2
 	}
@@ -24,4 +29,15 @@ function merge(arr1, arr2) {
 		var newArr = arr2.shift()
 	}
 	return [newArr].concat(merge(arr1, arr2))
+}
+
+
+function mergeSort (arr) {
+	if (arr.length < 2){
+		return arr
+	}
+
+	var newArr = split(arr);
+	return merge(mergeSort(newArr[0]), mergeSort(newArr[1]));
+
 }
